@@ -1,0 +1,36 @@
+{
+  "name": "frontend",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "generate:api": "dotenv -e .env -e .env -- kubb generate"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.11.1",
+    "nuxt": "^4.5.2",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.42",
+    "vue-router": "^5.3.1",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@iconify-json/heroicons": "^1.2.3",
+    "@iconify-json/lucide": "^1.2.136",
+    "@kubb/plugin-zod": "^5.1.4",
+    "@types/node": "^26.5.1",
+    "dotenv-cli": "^11.0.0",
+    "kubb": "^5.1.0",
+    "openapi-zod-client": "^1.18.3"
+  },
+  "allowScripts": {
+    "vue-demi@0.14.10": true,
+    "esbuild@0.28.2": true,
+    "esbuild@0.27.7": true,
+    "es5-ext@0.10.64": true
+  }
+}
